@@ -1,0 +1,146 @@
+<!-- 
+    '!' or "Bang" is a way for us to quickly create a boilerplate for our html.
+-->
+<!DOCTYPE html>
+<html lang="en">
+    <!-- 
+    - DOCTYPE: declares exactly what it is, an HTML document.
+    - lang: notes what the language of the document. Helps assist search engines & browsers.
+    - The head tag holds all of our meta data for the document. 
+    - This holds various information such as the title of the document, viewport settings, and links to other files, such as CSS.
+    -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=`, initial-scale=1.0">
+    <title>Document</title>
+    <!-- 
+        - charset: defines which characters are available, such as 0-9, A-Z, and symbols.
+        - UTF-8 covers almost all of the characters
+        - http-equiv: Allows us to render older browser versions if necessary. In this case, we are targeting Edge; however this isn't as necessary. 
+        - name & content: Details on the users viewport, or screen, and auto scales as necessary.
+        - title: details the title of our document. This is displayed in the tab of the browser page.
+    -->
+</head>
+<!-- 
+    The body tag:
+    - What the client will display when rendered.
+    - What you see on the page in the browser.
+-->
+<body>
+    <h1>Examples of Structural Elements</h1>
+    <div>
+        <div>
+            - h1: heading. These range from h1 - h6, getting smaller as the number increases.
+            - div: a division
+            - p : paragraph element
+            - img: provides us an element to present an image.
+            - span: We can write a block of text without line breaks.
+        </div>
+        <h2>Sample H2</h2>
+        <h3>Sample H3</h3>
+        <h6>Sample H6</h6>
+        <p>This is a paragraph element!</p>
+
+        <!-- Through emmet, we can add blocks of text via "lorem". -->
+
+        <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem omnis quidem corporis excepturi repudiandae labore, velit placeat aperiam. Accusamus esse impedit, incidunt suscipit ratione delectus voluptate veritatis inventore rerum recusandae. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam maiores consequuntur dolorem eveniet quod repellat temporibus voluptates commodi possimus id necessitatibus voluptatum, assumenda, laudantium doloribus iusto incidunt ducimus tempore aut. Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis nemo provident asperiores nisi ab sed. Assumenda quam, culpa iure temporibus voluptates aliquam itaque voluptate molestias cumque consequuntur maiores recusandae corrupti. Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates expedita sed voluptate non eum quidem enim, dolores, quo nulla pariatur, distinctio ab! Laboriosam perspiciatis molestiae dolorem nesciunt sapiente aperiam tempore.
+        Obcaecati explicabo, facere voluptatibus totam laboriosam ea consectetur possimus enim voluptates repellendus mollitia? Iusto illo possimus tempore, quia, distinctio ipsum beatae explicabo ullam facere eius ducimus, fugiat perferendis laboriosam sit.
+        Illum, odit harum. Minima, quisquam a exercitationem eligendi aspernatur doloremque eaque libero? Facere, nihil at. Commodi, tenetur aspernatur. Rem unde sapiente reprehenderit commodi voluptatum corporis temporibus reiciendis enim doloremque dolorum.</span>
+        <p>
+        <img src="https://assets.website-files.com/5f4577933a0688792f77983b/5ffcaf5bf69d7dbee581b8e3_01_11-21_UPRIGHT_LOGO_800.png" alt="Upright Logo" width="200">
+        </p>
+        <!-- 
+            img tag has two default attributes
+                - src
+                    - required
+                    - source of the image. This could be in an assets folder or another location on the web.
+                - alt
+                    - optional ~ but highly recommended
+                    - text that is used in case image doesn't load.
+                    - text that is read by screen readers for the visually impaired.
+                    - can be a source for SEO (Search Engine Optimization)  
+                - title
+                    - can help with tool-tips.
+        -->
+        <!-- ^All the above tags are Structural Elements -->
+    </div>
+        <!-- Divs are like little buckets to contain things. -->
+        <!-- 
+            emmet example: div>ul>li*6 
+            ul: Unordered List
+            ol: Ordered List
+            li: List Item 
+        -->
+        <div>
+            <ul>
+                <li><strong>Bolds our text</strong> but so does <b>this</b>.</li>
+                <li><em>Provides emphasis</em> or <i>italics</i></li>
+                <li><br>Will do a line break for us. <i>Notice the no closing tags?</i></li>
+                <li><hr>Gives us a horizontal rule or <b>dividing line</b></li>
+                <li><blockquote>"quote"</blockquote></li>
+                <li><pre>A way to showcase code</pre></li>
+                <li><pre>Lorem ipsum dolor sit amet consectetur <br>adipisicing elit. Itaque, debitis maxime <br>erum fugit nesciunt, <br>illum omnis dolor praesentium excepturi dolorem eos <br>unde at iusto nihil, sit sint <br>voluptas beatae! Repellendus!</pre></li>
+            </ul>
+        </div>
+
+        <!-- More Self-Closing Tags: -->
+        <div>
+            <!-- 
+            input: typically used in forms but not limited. 
+            - Many different types such as numbers, radial, email, password, etc.
+            link: won't show up in the browser, but is a way for us to connect files such as CSS.
+            -->
+            <input type="text">
+            <input type="password">
+
+            <input type="button" value="TEST">
+            <input type="checkbox" name="check me" id="">
+            
+            <link rel="stylesheet" href="">
+        </div>
+
+        <!-- Semantic Elements: Element names that clearly describe what they are to the dev and browser. -->
+        <img src="https://i.pinimg.com/originals/46/e2/1c/46e21c46e7001fca6554cd45562268fa.jpg" alt="Semantic tag layout">
+
+        <hr>
+
+        <!-- 
+        Sample HTML layout of Page Structure Example
+        - wrapped in a div simply to separate it out.
+        -->
+
+            <div>
+                <header></header>
+                <aside></aside>
+                <section>
+                    <article></article>
+                    <article></article>
+                </section>
+                <footer></footer>
+            </div>
+            <div>
+                <table>
+
+                    <!-- <tr> allows us to create a row. -->
+                    <tr>
+                
+                        <!-- <th> allows us to give a title to a table column. -->
+                        <th>First Header</th>
+                        <th>Second Header</th>
+                    </tr>
+                
+                    <tr>
+                
+                        <!-- <td> allows us to create a table cell. -->
+                        <td>first row, first column</td>
+                        <td>first row, second column</td>
+                    </tr>
+                
+                    <tr>
+                        <td>second row, first column</td>
+                        <td>second row, second column</td>
+                    </tr>
+                </table>
+            </div>
+</body>
+</html>
