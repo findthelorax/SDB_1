@@ -1,3 +1,22 @@
 ! + TAB = HTML Boilerplate
 CTRL + / = comment tags 
 CTRL + ENTER = Next Line
+
+:is()
+a:any-link combines a:link, a:active
+:where same but lacks specificity
+
+grid-areas: intro
+
+grid-template-areas:
+    "intro intro intro intro"
+    "main main main"
+    "media media"
+    "footer
+
+
+REM - relate to document can be helpful in a team
+
+EM - cascade relationship parent to child element
+
+PX - specific measurements
