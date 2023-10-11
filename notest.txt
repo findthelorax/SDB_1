@@ -1,3 +1,5 @@
+Upright - Paul Niemczyk
+
 ! + TAB = HTML Boilerplate
 CTRL + / = comment tags 
 CTRL + ENTER = Next Line

@@ -83,7 +83,8 @@ const javaScript = "So much fun!";
 console.log(today, javaScript);
 
 today = "Super!";
-javaScript = "meh";
+// javaScript = "meh"; // TypeError: Assignment to constant variable.
 
-console.log(today, javaScript); // TypeError: Assignment to constant variable.
+console.log(today, javaScript);
+
 
