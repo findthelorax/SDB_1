@@ -80,7 +80,7 @@ arrList();
 
 let dogArray = [
     "Husky",
-    "Shih Tzu",
+    "ShiTzu",
     "Corgi",
     "Catahoula",
     "Shiba",
