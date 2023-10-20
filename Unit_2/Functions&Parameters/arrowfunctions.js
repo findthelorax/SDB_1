@@ -90,3 +90,5 @@ function tipCalc(subTotal) {
 
 let total = tipCalc(bill);
 console.log(total);
+
+//! Why can't I call:   tipCalc(100);
