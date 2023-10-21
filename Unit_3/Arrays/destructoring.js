@@ -26,8 +26,8 @@ database.push(myObj); */
 
 const fullName = ['Jane', 'Doe'];
 
-const fName = fullName[0];
-const lName = fullName[1];
+// const fName = fullName[0];
+// const lName = fullName[1];
 
 const [firstName, lastName] = fullName;
 // console.log(firstName, lastName);
@@ -74,3 +74,28 @@ const [ fName, lName,,, ...otherInfo ] = fullName2;
 console.log(fName);
 console.log(lName);
 console.log(otherInfo);
+
+
+
+// Create the `series` variable
+var series = [0, 1];
+
+// Why are the instructions telling us to pop() but says nothing about pop() removing items from the array and doesn't inluding anything about adding them back in.
+
+while (series.length < 10 ) {
+    var n2 = series.pop();
+    var n1 = series.pop();
+    var sum = (n1 + n2);
+    series.push(n1, n2, sum);
+}
+
+// Print the Fibonacci sequence to the console
+
+console.log(series);
+
+console.log(series.pop(-2));
+console.log(series.slice(-2));
+series.push( series[0] + series[1] )
+console.log(series.length)
+// the first ten numbers should be
+// 0 1 1 2 3 5 8 13 21 34
